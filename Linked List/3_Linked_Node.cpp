@@ -17,8 +17,9 @@ int main(){
     head->next->next=new Node(30);//Assiging data3 in next node of data2
 
     while(head!=0){
-        cout<<head->data<<endl;
-        head=head->next;
+        cout<<head->data<<"->"; //Value 
+        cout<<head<<endl; //Address
+        head=head->next; 
     }
 
     
