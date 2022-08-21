@@ -20,14 +20,7 @@ int indexDeletion(int arr[], int size, int index){
     return 1;
 
 }
-int indexNoSquenceInsertion(int arr[], int size, int element, int capacity, int index){
-    if(size>=capacity){return -1;}
-    
-    arr[size]=arr[index];
-    arr[index]=element;
-    
-    return 1;
-}
+
 int main(){
 
     int capacity=100, element=7, size=7, index=3;
@@ -37,11 +30,7 @@ int main(){
     indexDeletion(arr, size, index);
     size=size-1;
     display(arr, size);
-    
 
-    // indexNoSquenceInsertion(arr, size, 500, capacity, 3);
-    // size=size+1;
-    // display(arr, size);
 
     return 0;
  }
